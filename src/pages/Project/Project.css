@@ -1,0 +1,160 @@
+.portfolio {
+  padding: 10px;
+  margin-bottom: 1%;
+}
+
+.grid-portfolio {
+  font-size: 2vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-project {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(500px, 2fr));
+  margin-top: 15px;
+  margin-bottom: 27px;
+}
+
+.project {
+  position: relative;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  /* height: 200px; */
+  cursor: pointer;
+}
+
+.active {
+  color: #edf500;
+  background-color: #00163b;
+  /* background-color: rgba(251, 255, 0, 0.3); */
+}
+
+.project:hover {
+  background-color: #edf500;
+  color: #00163b;
+  /* background-color: rgba(251, 255, 0, 0.3); */
+  transition: 0.5s;
+}
+
+/* .table-project {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: turquoise;
+} */
+
+/* Table */
+.before-table{
+  margin-top: 150px;
+  margin-bottom: 156px;
+  text-align: center;
+  color: rgb(179, 218, 255);
+}
+
+table {
+  border: none !important;
+  height: 70%;
+}
+
+table, th {
+  width: 25%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+#project-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#project-table td,
+#project-table th {
+  border: none;
+  padding: 18px;
+}
+
+#project-table tr:nth-child(odd) {
+  background-color: rgba(0, 174, 255, 0.1);
+}
+
+#project-table tr:hover {
+  background-color: rgba(0, 174, 255, 0.3);
+}
+
+/* #project-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+} */
+
+.image-project .port-image {
+  /* margin-top: 50px; */
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.site {
+  color: rgb(0, 174, 255) !important;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+/* Media */
+@media only screen and (max-width: 500px) {
+  .grid-portfolio {
+    display: block;
+    text-align: center;
+    font-size: 2vh;
+    height: auto;
+  }
+
+  .grid-project {
+    display: block;
+  }
+
+  table, tr, th, td {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .image-project {
+    height: 50%;
+  }
+
+  .grid-portfolio {
+    text-align: center;
+  }
+
+  .grid-project {
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
