@@ -2,26 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* In your CSS file (e.g., styles.css) */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+}
+
+h1,
+h2 {
+  @apply text-white text-[30px] md:text-[80px] leading-none font-bold tracking-tight;
+}
+
+h3,
+p {
+  @apply text-white;
+}
+
+main {
+  @apply min-h-screen flex items-center justify-center px-6;
+}
+
+.socials > a {
+  @apply flex items-center px-4 bg-white rounded-full font-bold;
+}
+
+.socials > img {
+  @apply h-12 p-1 bg-white rounded-full;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+.stack > p {
+  @apply py-1 px-2 rounded-md bg-sky-500 text-sm;
+}
+
+.skill-detail > img {
+  @apply h-11 bg-white p-1 rounded-md hover:scale-110 duration-300 transition-all;
 }
