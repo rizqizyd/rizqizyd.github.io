@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
   return (
     <div className="skills">
-      <h3 className="font-bold text-2xl items-start mb-3">Skills</h3>
+      <h5 className="font-bold text-white text-lg mb-3">Tech Stacks</h5>
       <div className="skill-detail flex flex-wrap gap-3">
         <img src="/skills/html-css-js.png" alt="html-css-js" />
         <img src="/skills/typescript.png" alt="typescript" />

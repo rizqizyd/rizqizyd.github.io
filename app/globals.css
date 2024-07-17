@@ -2,25 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* In your CSS file (e.g., styles.css) */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 
-body {
-  background-color: black;
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
 h2 {
-  @apply text-white text-[30px] md:text-[80px] leading-none font-bold tracking-tight;
+  @apply text-black text-[26px] sm:text-[40px] md:text-[55px] lg:text-[70px] leading-none font-bold tracking-tight;
 }
 
 h3,
 p {
-  @apply text-white;
+  color: #ffffff;
 }
 
-main {
-  @apply min-h-screen flex items-center justify-center px-6;
+.container {
+  padding: 16px;
+}
+
+.about-me,
+.socials {
+  text-align: center;
+}
+
+.section-one {
+  padding: 26px;
+  border-radius: 50px 5px;
+}
+
+.section-two {
+  background-color: #ffffff;
+  padding: 26px;
+  border-radius: 20px 10px;
 }
 
 .socials > a {
@@ -40,5 +55,14 @@ main {
 }
 
 .skill-detail > img {
-  @apply h-11 bg-white p-1 rounded-md hover:scale-110 duration-300 transition-all;
+  @apply bg-white p-1 rounded-md hover:scale-110 duration-300 transition-all md:w-auto md:h-9 h-[30px] w-auto;
+}
+
+.navbar-custom a {
+  color: red;
+  padding: 10px 14px;
+}
+
+.arrow-up-icon svg {
+  width: 12px;
 }

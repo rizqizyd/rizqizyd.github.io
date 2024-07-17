@@ -46,6 +46,9 @@ module.exports = {
           },
         },
       },
+      screens: {
+        xs: { max: "420px" },
+      },
     },
   },
   plugins: [],
