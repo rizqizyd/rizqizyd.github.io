@@ -469,7 +469,7 @@ function About() {
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                         className: "text-justify mb-6",
                         children: [
-                            "I hold a bachelor's degree and have over 2 years of experience as a frontend developer at a startup company. I have worked on various projects, including crowdfunding websites, e-commerce platforms, music streaming apps, and recommendation system. I create features to make web apps attractive and interactive, actively participate in discussions to improve the app, and collaborate closely with my team. My expertise allows me to build responsive, maintainable, and user-friendly applications, performance optimization, cross-browser compatibility, and seamless user experiences.",
+                            "I hold a bachelor's degree in computer science and have over two years of experience as a frontend developer at a startup. I’ve worked on projects like crowdfunding websites, e-commerce platforms, music streaming apps, and recommendation systems. I focus on creating attractive and interactive web apps, actively participating in discussions to enhance them, and collaborating closely with my team. My expertise enables me to build responsive, maintainable websites with optimized performance and seamless user experiences.",
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {})
                         ]
                     }),
