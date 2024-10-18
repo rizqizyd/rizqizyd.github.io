@@ -37,7 +37,7 @@ export default function Home() {
       title: "LindungiHutan",
       description:
         "Developed a mobile Progressive Web App using Vue.js/Nuxt.js with features including Donation Flow, Campaign Creation, Cart, User Profiles, Carbon Offset Calculator, Offline Monitoring, and Vouchers funcionalities.",
-      stacks: ["Nuxt.js", "Sass", "Jest", "AXML", "ACSS"],
+      stacks: ["Nuxt.js", "Scss/Sass", "Jest"],
       years: "2022 - 2024",
       url: "https://m.lindungihutan.com",
     },
@@ -124,7 +124,7 @@ export default function Home() {
         <About />
       </div>
       <div className="section-two mb-4" id="about">
-        <h3 className="font-normal text-base text-center italic items-start text-emerald-500">
+        <h3 className="font-normal text-[15px] text-center italic items-start text-emerald-500">
           “A society grows great when old men plant trees in whose shade they
           shall never sit.” — Greek Proverb
         </h3>

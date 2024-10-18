@@ -10,7 +10,7 @@ function About() {
         alt="photo"
       />
       <div className="flex flex-col justify-between">
-        <p className="text-justify mb-6">
+        <p className="text-justify mb-6 text-[15px]">
           I hold a bachelor&apos;s degree in computer science and have over two
           years of experience as a frontend developer at a startup. I’ve worked
           on projects like crowdfunding websites, e-commerce platforms, music

@@ -13,7 +13,7 @@ export default function Card({ items }) {
           <h3 className="text-lg font-bold text-white pb-1 mb-2 text-center md:text-start">
             {items.title}
           </h3>
-          <p className="description text-sm text-white mb-2 text-justify">
+          <p className="description text-[15px] text-white mb-2 text-justify">
             {items.description}
           </p>
           <p className="description text-sm text-white font-bold">
