@@ -15,7 +15,7 @@ function Contact() {
         <h3 className="font-bold text-2xl text-center items-start mb-3">
           Contact
         </h3>
-        <p className="mb-2 text-center">
+        <p className="description text-[15px] mb-2 text-center">
           Feel free to connect and check my portfolio through the platforms
           below. See you there! ✨️
         </p>

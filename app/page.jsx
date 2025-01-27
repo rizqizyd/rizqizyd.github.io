@@ -36,7 +36,7 @@ export default function Home() {
       logo: "/logo/lindungihutan.webp",
       title: "LindungiHutan",
       description:
-        "Developed a mobile Progressive Web App using Vue.js/Nuxt.js with features including Donation Flow, Campaign Creation, Cart, User Profiles, Carbon Offset Calculator, Offline Monitoring, and Vouchers funcionalities.",
+        "Developed a mobile-optimized crowdfunding Progressive Web App using Vue.js/Nuxt.js, utilizing Vuex Store for state management and featuring seamless donation workflows, campaign creation tools, cart and user profile management, a carbon offset calculator, offline monitoring, and voucher integration.",
       stacks: ["Nuxt.js", "Scss/Sass", "Jest"],
       years: "2022 - 2024",
       url: "https://m.lindungihutan.com",
