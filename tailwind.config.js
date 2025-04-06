@@ -21,6 +21,16 @@ module.exports = {
         "light-gray": "#313131",
         dark: "#101017",
         "deep-dark": "#050507",
+        navy: {
+          light: "#3A4F7A",
+          DEFAULT: "#1E3A5F",
+          dark: "#122438",
+        },
+        beige: {
+          light: "#F5E8D0",
+          DEFAULT: "#E6D5B8",
+          dark: "#C8B59C",
+        },
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
@@ -47,7 +57,7 @@ module.exports = {
         },
       },
       screens: {
-        xs: { max: "420px" },
+        xs: "420px",
       },
     },
   },

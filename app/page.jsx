@@ -1,36 +1,25 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "./components/Card";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import styles from "./Global.module.css";
+import Navbar from "./components/Navbar";
+import { Icon } from "iconsax-react";
+import Link from "next/link";
 
 export default function Home() {
-  const [isNavbarVisible, setNavbarVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const servicesSection = document.getElementById("explore");
-      const scrollPosition = window.scrollY || window.pageYOffset;
-
-      if (scrollPosition > servicesSection.offsetTop + 20) {
-        setNavbarVisible(true);
-      } else {
-        setNavbarVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const card_data = [
+    {
+      id: 1,
+      logo: "/logo/bank-sinarmas.jpg",
+      title: "Bank Sinarmas",
+      description:
+        "Built and maintained internal banking dashboards using React.js/Next.js, implementing reusable components, authentication, and performance optimizations. Integrated dynamic API versioning and wrote unit tests with Jest to ensure functional reliability.",
+      stacks: ["Next.js", "Typescript", "Tailwind", "Jest"],
+      years: "2024 - Present",
+      url: "",
+    },
     {
       id: 1,
       logo: "/logo/lindungihutan.webp",
@@ -83,71 +72,91 @@ export default function Home() {
     },
   ];
 
+  const handleScrollTo = id => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = id === "notes" ? 300 : 0;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <main className="container mx-auto">
-      <div className="about-me h-screen flex flex-col justify-center items-center relative">
-        <div className="absolute top-0 flex justify-center items-center">
-          <div
-            className="text-sm rounded-bl-3xl rounded-br-3xl w-56 mt-[-20px] text-center py-2 bg-green-500 text-white"
-            id="home"
-          >
-            Welcome!
-          </div>
-        </div>
+    <main className="mx-auto">
+      <div
+        className="about-me h-screen flex flex-col bg-navy justify-center items-center relative"
+        id="home"
+      >
         <div className="detail">
           <h2 className="sm:mb-5 mb-3">
-            <span className="bg-gradient-to-r bg-clip-text text-transparent from-emerald-500 via-green-400 to-emerald-500 animate-text xs:text-[24px]">
-              Muhammad Rizqi Az Zayyad
-            </span>
+            <span className="text-beige">Muhammad Rizqi Az Zayyad</span>
           </h2>
-          <p className="bg-gradient-to-r from-green-400 to-emerald-500 rounded-md mb-4 sm:text-sm py-1 px-2 text-[12px]">
+          <p className="bg-beige rounded-sm text-navy mb-4 sm:text-sm py-1 px-2 text-xs">
             Hi There! I am passionate about Software Engineering
           </p>
           <div
             className="relative flex justify-center items-center h-auto"
             id="explore"
           >
-            <a
-              href="#about"
-              className="bg-white text-emerald-500 px-3 py-1 rounded-md z-10 sm:text-sm text-[12px] shadow-lg shadow-green-300/30"
+            <button
+              onClick={() => handleScrollTo("about")}
+              className="bg-navy text-beige px-3 py-1 rounded-sm z-10 sm:text-sm text-xs shadow-lg"
             >
               Explore More
-            </a>
-            <span className="animate-ping absolute inline-flex h-[22px] w-[68px] rounded-md bg-emerald-400 opacity-75"></span>
+            </button>
+            <span className="animate-ping absolute inline-flex h-[22px] w-[68px] rounded-sm bg-beige-light opacity-75"></span>
           </div>
         </div>
       </div>
-      <div className="section-one bg-green-500 mb-4" id="about">
-        <h3 className="font-bold text-2xl text-center items-start mb-3">
-          About
-        </h3>
-        <About />
-      </div>
-      <div className="section-two mb-4" id="about">
-        <h3 className="font-normal text-[15px] text-center italic items-start text-emerald-500">
-          “A society grows great when old men plant trees in whose shade they
-          shall never sit.” — Greek Proverb
-        </h3>
-      </div>
-      <div className="p-7 rounded-3xl bg-green-500 mb-4" id="project">
-        <h3 className="font-bold text-2xl text-center items-start mb-3">
-          Project
-        </h3>
-        <div className="grid gap-5">
-          {card_data.map((items, index) => (
-            <Card key={index} items={items} />
-          ))}
+      <div className="bg-beige">
+        <div className="px-6 py-8 lg:p-32" id="about">
+          <h3 className="text-navy font-bold text-2xl text-center items-start mb-5">
+            About
+          </h3>
+          <About />
         </div>
       </div>
-      <Contact />
-      <a
-        href="#home"
-        className={`${styles.navbar} ${
-          isNavbarVisible ? styles.active : ""
-        } arrow-up-icon fixed flex justify-center items-center bottom-5 right-5 w-12 h-12 rounded-full bg-white shadow-md`}
+      <div className="p-7">
+        <h3 className="font-normal text-sm text-center italic items-start text-navy">
+          “A society grows great when old men plant trees in whose shade they
+          shall never sit.” <br />— Greek Proverb
+        </h3>
+      </div>
+      <div className="px-6 py-8 lg:p-32 bg-navy" id="projects">
+        <h3 className="font-bold text-2xl text-center items-start mb-5">
+          Projects
+        </h3>
+        {card_data.map((items, index) => (
+          <div className="grid gap-5" key={index}>
+            <Card items={items} />
+          </div>
+        ))}
+      </div>
+      <div
+        className="text-navy flex items-center gap-4 font-semibold p-7 bg-white text-center"
+        id="notes"
       >
-        <FontAwesomeIcon icon={faArrowUp} />
-      </a>
+        <hr className="border-t border-navy w-full" />
+        <Link
+          href="/notes"
+          className="border border-navy py-3 px-5 shadow-sm flex gap-3 items-center justify-center rounded"
+        >
+          <Icon /> Notes
+        </Link>
+        <hr className="border-t border-navy w-full" />
+      </div>
+      <Contact id="contact" />
+      <div className="bg-navy p-4">
+        <div className="flex justify-center gap-3 py-1">
+          <p className="text-sm">Made with ❤️</p>
+        </div>
+      </div>
+      <Navbar handleScrollTo={handleScrollTo} />
     </main>
   );
 }
