@@ -12,7 +12,7 @@ export default function Home() {
   const card_data = [
     {
       id: 1,
-      logo: "/logo/bank-sinarmas.jpg",
+      logo: "/logo/bank-sinarmas.webp",
       title: "Bank Sinarmas",
       description:
         "Built and maintained internal banking dashboards using React.js/Next.js, implementing reusable components, authentication, and performance optimizations. Integrated dynamic API versioning and wrote unit tests with Jest to ensure functional reliability.",
@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       id: 2,
-      logo: "/logo/crown.jpeg",
+      logo: "/logo/crown.webp",
       title: "Fashion Ecommerce",
       description:
         "Built a scalable e-commerce application using React, Redux, React Hooks, GraphQL, and Firebase, with efficient state management via Redux Thunk and Redux Saga. Converted class components to functional components, leveraging React Hooks to manage state and lifecycle methods efficiently.",
@@ -42,7 +42,7 @@ export default function Home() {
     },
     {
       id: 3,
-      logo: "/logo/music-app.jpeg",
+      logo: "/logo/music-app.webp",
       title: "Music App",
       description:
         "Implemented a comprehensive music player application using Vue, Tailwind, Pinia, and Firebase. Conducted extensive testing with Vitest (unit, snapshot, and end-to-end testing) to ensure application reliability.",
@@ -52,7 +52,7 @@ export default function Home() {
     },
     {
       id: 4,
-      logo: "/logo/face-detector.jpeg",
+      logo: "/logo/face-detector.webp",
       title: "Face Detector",
       description:
         "Developed a real-time face detection application using React.js, Node.js, Express.js, and PostgreSQL, incorporating machine learning algorithms for accurate and efficient face recognition.",
@@ -62,7 +62,7 @@ export default function Home() {
     },
     {
       id: 5,
-      logo: "/logo/resystem.jpeg",
+      logo: "/logo/resystem.webp",
       title: "Resystem (Book Recommendation System)",
       description:
         "Developed a content-based filtering book recommendation system in Python using machine learning, TensorFlow and Flask, with a user-friendly web interface for personalized suggestions.",
@@ -132,9 +132,7 @@ export default function Home() {
           Projects
         </h3>
         {card_data.map((items, index) => (
-          <div className="grid gap-5" key={index}>
-            <Card items={items} />
-          </div>
+          <Card key={index} items={items} />
         ))}
       </div>
       <div

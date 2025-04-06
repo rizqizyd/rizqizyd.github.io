@@ -1,0 +1,46 @@
+export default function HydrationInNextJs() {
+  return (
+    <div className="grid gap-3">
+      <h1 className="text-lg">Hydration in Next.js</h1>
+      <p className="text-black">
+        Hydration in Next.js is the process of attaching event listeners and
+        reactivating JavaScript logic on a Server-Side Rendered (SSR) or Static
+        Site Generated (SSG) page once it reaches the client. When Next.js
+        pre-renders a page on the server, it sends fully-formed HTML to the
+        browser. However, this HTML is static and lacks interactivity until
+        hydration kicks in, allowing React components to become interactive.
+        <br />
+        <br />
+        During hydration, Next.js reconciles the server-rendered HTML with the
+        React Virtual DOM. React then attaches event listeners and initializes
+        component states, ensuring that UI elements behave as expected. While
+        this approach enhances SEO and improves the initial page load speed, it
+        introduces potential issues like mismatched content (if the client-side
+        React state differs from the pre-rendered HTML) or performance delays
+        due to JavaScript execution.
+        <br />
+        <br />
+        To optimize hydration, Next.js offers techniques like partial hydration
+        and React Server Components (RSC). Partial hydration allows selective
+        hydration of components instead of the entire page, reducing JavaScript
+        execution on the client. React Server Components, introduced in Next.js
+        13, further improve performance by keeping non-interactive parts of a
+        page on the server, eliminating unnecessary client-side JavaScript.
+        <br />
+        <br />
+        Developers can also defer hydration for specific components using
+        React&apos;s useEffect hook, ensuring that expensive calculations or
+        state updates occur only after the initial page load. Additionally, the
+        suppressHydrationWarning attribute can prevent hydration mismatches when
+        rendering dynamic content that differs between the server and client.
+        <br />
+        <br />
+        In summary, hydration is crucial for making SSR pages interactive in
+        Next.js, but optimizing it is essential to avoid performance
+        bottlenecks. Techniques like partial hydration, React Server Components,
+        and strategic useEffect usage help improve the user experience by
+        balancing fast initial loads with seamless interactivity.
+      </p>
+    </div>
+  );
+}

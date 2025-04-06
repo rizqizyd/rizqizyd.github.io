@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ items }) {
   return (
-    <div className="bg-[#ffffff00] lg:shadow-lg lg:p-6 mb-4 pt-0 text-black flex md:items-stretch gap-4 text-left">
+    <div className="bg-[#ffffff00] lg:shadow-lg lg:p-6 mb-6 lg:mb-4 pt-0 text-black flex md:items-stretch gap-4 text-left">
       <img
         src={items.logo}
         alt="LindungiHutan"
@@ -10,7 +10,7 @@ export default function Card({ items }) {
       />
       <div className="flex flex-col justify-between gap-4">
         <div>
-          <h3 className="leading-none text-md font-bold text-white pb-1 mb-2 text-start">
+          <h3 className="leading-none text-md font-bold text-white mb-2 text-start">
             {items.title}
           </h3>
           <p className="description text-sm text-white mb-2 text-justify">
