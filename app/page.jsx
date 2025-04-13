@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import { Icon } from "iconsax-react";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const card_data = [
@@ -97,7 +98,18 @@ export default function Home() {
             <span className="text-beige">Muhammad Rizqi Az Zayyad</span>
           </h2>
           <p className="bg-beige rounded-sm text-navy mb-4 sm:text-sm py-1 px-2 text-xs">
-            Hi There! I am passionate about Software Engineering
+            Hi There! I am passionate about{" "}
+            <TypeAnimation
+              sequence={[
+                "Software Engineering",
+                1500,
+                "Artificial Intelligence",
+                1500,
+              ]}
+              wrapper="span"
+              speed={40}
+              repeat={Infinity}
+            />
           </p>
           <div
             className="relative flex justify-center items-center h-auto"
