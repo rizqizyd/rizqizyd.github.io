@@ -100,12 +100,7 @@ export default function Home() {
           <p className="bg-beige rounded-sm text-navy mb-4 sm:text-sm py-1 px-2 text-xs">
             Hi There! I am passionate about{" "}
             <TypeAnimation
-              sequence={[
-                "Software Engineering",
-                1500,
-                "Artificial Intelligence",
-                1500,
-              ]}
+              sequence={["Software Engineering", 1500, "Web Development", 1500]}
               wrapper="span"
               speed={40}
               repeat={Infinity}

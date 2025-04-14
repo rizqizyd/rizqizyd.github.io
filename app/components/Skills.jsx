@@ -9,9 +9,7 @@ export default function Skills() {
       <div className="skill-detail flex flex-wrap justify-center lg:justify-start gap-3">
         <img src="/skills/typescript.webp" alt="typescript" />
         <img src="/skills/react.webp" alt="react" />
-        <img src="/skills/next.webp" alt="next" />
         <img src="/skills/vue.webp" alt="vue" />
-        <img src="/skills/nuxt.webp" alt="nuxt" />
         <img src="/skills/nodejs.webp" alt="nodejs" />
         <img src="/skills/jest.webp" alt="jest" />
         <img src="/skills/python.webp" alt="python" />
