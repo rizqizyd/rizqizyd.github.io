@@ -90,7 +90,7 @@ export default function Home() {
   return (
     <main className="mx-auto">
       <div
-        className="about-me h-screen flex flex-col bg-navy justify-center items-center relative"
+        className="about-me h-dvh flex flex-col bg-navy justify-center items-center relative"
         id="home"
       >
         <div className="detail">
@@ -116,7 +116,7 @@ export default function Home() {
             >
               Explore More
             </button>
-            <span className="animate-ping absolute inline-flex h-[22px] w-[68px] rounded-sm bg-beige-light opacity-75"></span>
+            <span className="animate-ping absolute inline-flex h-[20px] w-[62px] rounded-sm bg-beige-light opacity-75"></span>
           </div>
         </div>
       </div>

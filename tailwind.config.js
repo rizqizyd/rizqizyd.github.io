@@ -59,6 +59,9 @@ module.exports = {
       screens: {
         xs: "420px",
       },
+      height: {
+        dvh: "100dvh",
+      },
     },
   },
   plugins: [],

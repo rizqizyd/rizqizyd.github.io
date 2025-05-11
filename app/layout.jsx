@@ -1,7 +1,10 @@
-import "../app/styles/globals.css";
+import "./styles/globals.css";
 
 export const metadata = {
-  title: "Muhammad Rizqi Az Zayyad",
+  title: {
+    default: "Muhammad Rizqi Az Zayyad",
+    template: "Muhammad Rizqi Az Zayyad - %s",
+  },
   description: "Main Page",
 };
 
