@@ -12,6 +12,7 @@ export default function Skills() {
         <img src="/skills/vue.webp" alt="vue" />
         <img src="/skills/nodejs.webp" alt="nodejs" />
         <img src="/skills/jest.webp" alt="jest" />
+        <img src="/skills/kubernetes.webp" alt="kubernetes" />
         <img src="/skills/python.webp" alt="python" />
       </div>
     </div>

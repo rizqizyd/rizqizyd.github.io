@@ -16,7 +16,7 @@ export default function Home() {
       logo: "/logo/bank-sinarmas.webp",
       title: "Bank Sinarmas",
       description:
-        "Built and maintained internal banking dashboards using React.js/Next.js, implementing reusable components, authentication, and performance optimizations. Integrated dynamic API versioning and wrote unit tests with Jest to ensure functional reliability.",
+        "Developed internal banking dashboards using React.js and Next.js to deliver insights on financial performance, compliance, and operations. Optimized data fetching with caching and built reusable components for scalability. Supported CI/CD deployment with the DevOps team and collaborated with backend, QA, and product teams to ensure smooth workflows and reliable delivery.",
       stacks: ["Next.js", "Typescript", "Tailwind", "Jest"],
       years: "2024 - Present",
       url: "",

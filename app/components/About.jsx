@@ -15,13 +15,11 @@ function About() {
       </div>
       <div>
         <p className="text-justify text-navy mb-6 text-sm">
-          With over three years of experience, I have worked on diverse projects
-          including crowdfunding platforms, fashion e-commerce sites, music web
-          apps, and recommendation systems. My expertise lies in developing
-          visually engaging and interactive web applications, collaborating
-          effectively with cross-functional teams, and enhancing functionality
-          and user experience. I specialize in creating responsive, maintainable
-          websites optimized for performance and seamless usability.
+          With over three years of experience, I have worked on diverse projects including banking dashboards, 
+          crowdfunding platforms, fashion e-commerce sites, music web apps, and recommendation systems. 
+          My expertise lies in developing visually engaging and interactive web applications, collaborating 
+          effectively with cross-functional teams, and enhancing functionality and user experience. I specialize 
+          in creating responsive, maintainable websites optimized for performance and seamless usability.
         </p>
         <Skills />
       </div>
